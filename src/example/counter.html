@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  <title>Redex basic example</title>
+</head>
+<body>
+<div>
+  <p>
+    <span id="value">0</span>
+    <button id="increment">+</button>
+  </p>
+</div>
+
+<script>
+  function counter(state, action) {
+
+    if (typeof state === 'undefined') {
+      return 0;
+    }
+    console.log('INCREMENT...');
+    switch (action.type) {
+      case "INCREMENT" :
+        return state + 1;
+      default:
+        return state;
+    }
+  }
+
+  var store = Redux.createStore(counter)
+  var valueEl = document.getElementById('value')
+
+  function render() {
+    valueEl.innerHTML = store.getState().toString();
+  }
+
+  render()
+
+  store.subscribe(render)
+
+  document.getElementById('increment')
+    .addEventListener('click', function () {
+      console.log('++++');
+      store.dispatch({type: 'INCREMENT'})
+    })
+
+</script>
+
+</body>
+</html>
