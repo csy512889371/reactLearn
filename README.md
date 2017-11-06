@@ -25,6 +25,8 @@ src/examplel/counter 官网例子 counter
 src/examplel/todos 官网例子todos
 
 
-![image](https://github.com/csy512889371/reactLearn/blob/master/img/doRedux.jpg)
-
+###初始化Redux整体状态流转，如图
 ![image](https://github.com/csy512889371/reactLearn/blob/master/img/initRedux.jpg)
+
+###进而触发初始化过程中注册的listener回调函数。如图
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/doRedux.jpg)
