@@ -14,14 +14,14 @@
 ## 例子二 src/myreduxSec/app
 例子：简单登录、列表、添加列表、导航
 
-## 例子三 
+## 例子三  counterVanilla
 src/examplel/counterVanilla 官网例子 counterVanilla
 myreduxThird 对myreduxSec改造成ES6语法。
 
-## 例子四
+## 例子四 counter
 src/examplel/counter 官网例子 counter
 
-## 例子四
+## 例子四 todos
 src/examplel/todos 官网例子todos
 
 
