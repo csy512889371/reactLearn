@@ -6,13 +6,25 @@
 2 webpack.config.js
 3 .eslintrc
 
-# myredux 目录
+# redux学习demo
+
+## 例子一 src/myredux 仿redux功能
 类似redux功能 
 
-# myreduxSec/app
+## 例子二 src/myreduxSec/app
 例子：简单登录、列表、添加列表、导航
 
-# 例子
-src/examplel 例子 
+## 例子三 
+src/examplel/counterVanilla 官网例子 counterVanilla
 myreduxThird 对myreduxSec改造成ES6语法。
 
+## 例子四
+src/examplel/counter 官网例子 counter
+
+## 例子四
+src/examplel/todos 官网例子todos
+
+
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/doRedux.jpg)
+
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/initRedux.jpg)
