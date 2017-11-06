@@ -30,3 +30,22 @@ src/examplel/todos 官网例子todos
 
 ### 进而触发初始化过程中注册的listener回调函数。如图
 ![image](https://github.com/csy512889371/reactLearn/blob/master/img/doRedux.jpg)
+
+
+### mapStateToProps 调用
+数据变化才调用
+function mapStateToProps(state) {
+    console.log("get state funciton....");
+    return store.getState();
+}
+
+function mapStateToProps(state, props) {
+    console.log("get state funciton....");
+    return store.getState();
+}
+
+/**
+ * 建议和顶端 绑定
+ * 1 个store 绑定多个UI
+ */
+UI = connect(mapStateToProps, mapDispatchToProps)(UI);
