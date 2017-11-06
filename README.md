@@ -44,8 +44,20 @@ function mapStateToProps(state, props) {
     return store.getState();
 }
 
-/**
- * 建议和顶端 绑定
- * 1 个store 绑定多个UI
- */
+建议和顶端 绑定 1 个store 绑定多个UI
 UI = connect(mapStateToProps, mapDispatchToProps)(UI);
+
+### 思维导图
+
+Component like(UI) this.props.onClick  => dispatch(Action) => combineReducers(reducer) => render(component)
+
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/redux1.jpg)
+
+Containers connect =>mapDispatchToprops => reducer => mapStateToProps => components
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/redux2.jpg)
+
+store => action->despatch </br>
+store => reducer </br>
+store => subscribe => render =>components </br>
+
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/redux3.jpg)
