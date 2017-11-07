@@ -5,9 +5,9 @@ Action 发出以后，Reducer 立即算出 State，这叫做同步；Action 发�
 
 ## 一、中间件的概念
 
-<* Reducer：纯函数，只承担计算 State 的功能，不合适承担其他功能，也承担不了，因为理论上，纯函数不能进行读写操作。
-<* View：与 State 一一对应，可以看作 State 的视觉层，也不合适承担其他功能。
-<* Action：存放数据的对象，即消息的载体，只能被别人操作，自己不能进行任何操作。
+>* Reducer：纯函数，只承担计算 State 的功能，不合适承担其他功能，也承担不了，因为理论上，纯函数不能进行读写操作。
+>* View：与 State 一一对应，可以看作 State 的视觉层，也不合适承担其他功能。
+>* Action：存放数据的对象，即消息的载体，只能被别人操作，自己不能进行任何操作。
 
 
 
@@ -40,7 +40,7 @@ const store = createStore(
 上面代码中，redux-logger提供一个生成器createLogger，可以生成日志中间件logger。然后，将它放在applyMiddleware方法之中，传入createStore方法，就完成了store.dispatch()的功能增强。
 
 这里有两点需要注意：
-<* createStore方法可以接受整个应用的初始状态作为参数，那样的话，applyMiddleware就是第三个参数了。
+>* createStore方法可以接受整个应用的初始状态作为参数，那样的话，applyMiddleware就是第三个参数了。
 
 ```javascript
 
@@ -51,7 +51,7 @@ const store = createStore(
 );
 ```
 
-<* 中间件的次序有讲究。
+>* 中间件的次序有讲究。
 
 ```javascript
 const store = createStore(
