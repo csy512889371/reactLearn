@@ -1,6 +1,7 @@
-# 一、 Redux 的设计思想很简单，就两句话
->* 1. Web 应用是一个状态机，视图与状态是一一对应的。
->* 2. 所有的状态，保存在一个对象里面。
+# 一、 Redux 
+Redux 的设计思想很简单，就两句话
+>* Web 应用是一个状态机，视图与状态是一一对应的。
+>* 所有的状态，保存在一个对象里面。
 
 ## 1. state
 一个 State 对应一个 View。只要 State 相同，View 就相同。
@@ -13,7 +14,7 @@ const state = store.getState();
 
 ## 2. Action
 State 的变化，会导致 View 的变化。但是，用户接触不到 State，只能接触到 View。所以，State 的变化必须是 View 导致的。
-···javascript
+```javascript
 const action = {
   type: 'ADD_TODO',
   payload: 'Learn Redux'
