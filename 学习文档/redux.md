@@ -20,7 +20,7 @@ const action = {
   payload: 'Learn Redux'
 };
 ```
-## Action Creator
+## 3.Action Creator
 View 要发送多少种消息，就会有多少种 Action。如果都手写，会很麻烦。可以定义一个函数来生成 Action，这个函数就叫 Action Creator。
 ```javascript
 const ADD_TODO = '添加 TODO';
@@ -34,7 +34,7 @@ function addTodo(text) {
 
 const action = addTodo('Learn Redux');
 ```
-## 3. store.dispatch()
+## 4. store.dispatch()
 store.dispatch()是 View 发出 Action 的唯一方法。
 ```javascript
 import { createStore } from 'redux';
@@ -47,7 +47,7 @@ store.dispatch({
 ```
 
 
-## 4. Reducer
+## 5. Reducer
 Store 收到 Action 以后，必须给出一个新的 State，这样 View 才会发生变化。这种 State 的计算过程就叫做 Reducer。
 Reducer 是一个函数，它接受 Action 和当前 State 作为参数，返回一个新的 State。
 ```javascript
@@ -92,7 +92,7 @@ const actions = [
 const total = actions.reduce(reducer, 0); // 3
 ```
 
-## 5. 纯函数
+## 6. 纯函数
 Reducer 函数最重要的特征是，它是一个纯函数。也就是说，只要是同样的输入，必定得到同样的输出。</br>
 纯函数是函数式编程的概念，必须遵守以下一些约束
 
@@ -116,7 +116,7 @@ function reducer(state, action) {
 }
 ```
 
-## 6. store.subscribe()
+## 7. store.subscribe()
 
 Store 允许使用store.subscribe方法设置监听函数，一旦 State 发生变化，就自动执行这个函数。
 ```javascript
@@ -274,5 +274,85 @@ const reducer = combineReducers(reducers)
 ```
 
 # 四、工作流程
+
+
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/redux4.jpg)
+
+首先，用户发出 Action
+```javascript
+store.dispatch(action);
+```
+然后，Store 自动调用 Reducer，并且传入两个参数：当前 State 和收到的 Action。 Reducer 会返回新的 State 。
+
+```javascript
+let nextState = todoApp(previousState, action);
+```
+State 一旦有变化，Store 就会调用监听函数。
+
+```javascript
+// 设置监听函数
+store.subscribe(listener);
+```
+listener可以通过store.getState()得到当前状态。如果使用的是 React，这时可以触发重新渲染 View。
+
+```javascript
+function listerner() {
+  let newState = store.getState();
+  component.setState(newState);   
+}
+```
+
+# 五、实例：计数器
+
+```javascript
+const Counter = ({ value }) => (
+  <h1>{value}</h1>
+);
+
+const render = () => {
+  ReactDOM.render(
+    <Counter value={store.getState()}/>,
+    document.getElementById('root')
+  );
+};
+
+store.subscribe(render);
+render();
+```
+上面是一个简单的计数器，唯一的作用就是把参数value的值，显示在网页上。Store 的监听函数设置为render，每次 State 的变化都会导致网页重新渲染。</br>
+下面加入一点变化，为Counter添加递增和递减的 Action。
+```javascript
+const Counter = ({ value, onIncrement, onDecrement }) => (
+  <div>
+  <h1>{value}</h1>
+  <button onClick={onIncrement}>+</button>
+  <button onClick={onDecrement}>-</button>
+  </div>
+);
+
+const reducer = (state = 0, action) => {
+  switch (action.type) {
+    case 'INCREMENT': return state + 1;
+    case 'DECREMENT': return state - 1;
+    default: return state;
+  }
+};
+
+const store = createStore(reducer);
+
+const render = () => {
+  ReactDOM.render(
+    <Counter
+      value={store.getState()}
+      onIncrement={() => store.dispatch({type: 'INCREMENT'})}
+      onDecrement={() => store.dispatch({type: 'DECREMENT'})}
+    />,
+    document.getElementById('root')
+  );
+};
+
+render();
+store.subscribe(render);
+```
 
 
