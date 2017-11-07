@@ -162,12 +162,12 @@ store.dispatch(fetchPosts('reactjs')).then(() =>
 
 上面代码中，fetchPosts是一个Action Creator（动作生成器），返回一个函数。这个函数执行后，先发出一个Action（requestPosts(postTitle)），然后进行异步操作。拿到结果后，先将结果转成 JSON 格式，然后再发出一个 Action（ receivePosts(postTitle, json)）。
 上面代码中，有几个地方需要注意。
-```javascript
+
 >* fetchPosts返回了一个函数，而普通的 Action Creator 默认返回一个对象。
 >* 返回的函数的参数是dispatch和getState这两个 Redux 方法，普通的 Action Creator 的参数是 Action 的内容。
 >* 在返回的函数之中，先发出一个 Action（requestPosts(postTitle)），表示操作开始。
 >* 异步操作结束之后，再发出一个 Action（receivePosts(postTitle, json)），表示操作结束。
-```
+
 
 这样的处理，就解决了自动发送第二个 Action 的问题。但是，又带来了一个新的问题，Action 是由store.dispatch方法发送的。而store.dispatch方法正常情况下，参数只能是对象，不能是函数。
 这时，就要使用中间件redux-thunk。
