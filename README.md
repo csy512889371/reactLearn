@@ -18,7 +18,7 @@
 
 ## src 目录为 demo例子代码
 
-其中例子一、二、三、四、五：https://github.com/reactjs/redux/tree/master/examples
+例子三、四、五：https://github.com/reactjs/redux/tree/master/examples  </br>
 例子六：https://github.com/reactjs/react-router-tutorial/tree/master/lessons
 
 > **例子一 src/myredux** 
@@ -73,3 +73,4 @@ myreduxThird 对myreduxSec改造成ES6语法
 > https://github.com/ReactTraining/react-router react-router 官网
 > http://www.redux.org.cn/ redux 中文
 
+> http://www.ruanyifeng.com/blog/javascript/ 阮一峰教程
