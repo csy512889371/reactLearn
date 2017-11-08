@@ -43,6 +43,7 @@ module1._count = 5;
 
 ## 三、立即执行函数写法
 使用"立即执行函数"（Immediately-Invoked Function Expression，IIFE），可以达到不暴露私有成员的目的。
+```javascript
 var module1 = (function(){
 　　　　var _count = 0;
 　　　　var m1 = function(){
@@ -56,7 +57,7 @@ var module1 = (function(){
 　　　　　　m2 : m2
 　　　　};
 　　})();
-
+```
 使用上面的写法，外部代码无法读取内部的_count变量。
 ```javascript
 console.info(module1._count); //undefined
