@@ -18,6 +18,9 @@
 
 ## src 目录为 demo例子代码
 
+其中例子一、二、三、四、五：https://github.com/reactjs/redux/tree/master/examples
+例子六：https://github.com/reactjs/react-router-tutorial/tree/master/lessons
+
 > **例子一 src/myredux** 
 *仿redux功能*
 类似redux功能
@@ -42,7 +45,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 
 > **例子六 src/examplel/router**
 官网例子router
-地址：https://github.com/reactjs/react-router-tutorial/tree/master/lessons
+
 
 ## css 
 > 文件夹下 darkdown.css 用于软件 Cmd Markdown.exe 生成的html的样式
@@ -68,3 +71,5 @@ myreduxThird 对myreduxSec改造成ES6语法
 
 ## 相关网站
 > https://github.com/ReactTraining/react-router react-router 官网
+> http://www.redux.org.cn/ redux 中文
+
