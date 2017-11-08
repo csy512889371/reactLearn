@@ -1,15 +1,15 @@
 # **react学习资料汇总**
 
->* 学习笔记
->* demo
->* 心得
+- [x] 学习笔记
+- [x] demo
+- [x] 心得
 
 ## **目录结构**
 
 ## config 配置文件
->* package 包依赖
->* webpack.config.js
->* .eslintrc
+标签：  package 包依赖
+标签：  webpack.config.js
+标签： .eslintrc
 
 以上几个配置文件 可以实习开发 React 热部署。方便学习。
 将其放在项目跟目录下：npm install
@@ -18,8 +18,8 @@
 
 ## src 目录为 demo例子代码
 
-例子三、四、五：https://github.com/reactjs/redux/tree/master/examples  </br>
-例子六：https://github.com/reactjs/react-router-tutorial/tree/master/lessons
+例子三、四、五 [来源](https://github.com/reactjs/redux/tree/master/examples)  </br>
+例子六 [来源](https://github.com/reactjs/react-router-tutorial/tree/master/lessons)
 
 > **例子一 src/myredux** 
 *仿redux功能*
@@ -70,7 +70,6 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* React学习笔记_redux二
 
 ## 相关网站
-> https://github.com/ReactTraining/react-router react-router 官网
-> http://www.redux.org.cn/ redux 中文
-
-> http://www.ruanyifeng.com/blog/javascript/ 阮一峰教程
+>   [react-router 官网](https://github.com/ReactTraining/react-router) </br>
+> [redux 中文](http://www.redux.org.cn/)  </br>
+> [阮一峰教程](http://www.ruanyifeng.com/blog/javascript/)  </br>
