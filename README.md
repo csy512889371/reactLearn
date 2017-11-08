@@ -7,14 +7,15 @@
 ## **目录结构**
 
 ## config 配置文件
-> package 包依赖
-> webpack.config.js
-> .eslintrc
+> package 包依赖 </br>
+> webpack.config.js </br>
+> .eslintrc </br>
 
 以上几个配置文件 可以实习开发 React 热部署。方便学习。
 将其放在项目跟目录下：npm install
 
-> dist 文件夹 是项目运行后 base文件夹
+> dist 文件夹
+> 项目运行后 base文件夹
 
 ## src 目录为 demo例子代码
 
@@ -31,19 +32,19 @@
 myreduxThird 对myreduxSec改造成ES6语法
 
 
-> **例子三  src/examplel/counterVanilla**
+> **例子三  src/examplel/counterVanilla**  </br>
 官网例子 counterVanilla
 
 
-> **例子四 src/examplel/counter**
+> **例子四 src/examplel/counter**  </br>
 官网例子 counter
 
 
-> **例子五 src/examplel/todos**
+> **例子五 src/examplel/todos**  </br>
 官网例子todos
 
 
-> **例子六 src/examplel/router**
+> **例子六 src/examplel/router**  </br>
 官网例子router
 
 
