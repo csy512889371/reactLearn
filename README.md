@@ -1,4 +1,4 @@
-# react学习资料汇总
+# **react学习资料汇总**
 
 >* 学习笔记
 >* demo
@@ -20,12 +20,12 @@
 
 > **例子一 src/myredux** 
 *仿redux功能*
-*类似redux功能 *
+类似redux功能
 
 
 >  **例子二 src/myreduxSec/app** 
 *例子：简单登录、列表、添加列表、导航*
-*myreduxThird 对myreduxSec改造成ES6语法。*
+myreduxThird 对myreduxSec改造成ES6语法
 
 
 > **例子三  src/examplel/counterVanilla**
@@ -45,7 +45,7 @@
 地址：https://github.com/reactjs/react-router-tutorial/tree/master/lessons
 
 ## css 
->文件夹下 darkdown.css 用于软件 Cmd Markdown.exe 生成的html的样式
+> 文件夹下 darkdown.css 用于软件 Cmd Markdown.exe 生成的html的样式
 
 ## 学习文档
 
