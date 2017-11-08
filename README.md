@@ -4,9 +4,9 @@
 >* demo
 >* 心得
 
-#**目录结构**
+## **目录结构**
 
-# config 配置文件
+## config 配置文件
 >* package 包依赖
 >* webpack.config.js
 >* .eslintrc
@@ -16,37 +16,38 @@
 
 > dist 文件夹 是项目运行后 base文件夹
 
-# src 目录为 demo例子代码
+## src 目录为 demo例子代码
 
 > **例子一 src/myredux** 
 *仿redux功能*
 *类似redux功能 *
 
----
+
 >  **例子二 src/myreduxSec/app** 
 *例子：简单登录、列表、添加列表、导航*
 *myreduxThird 对myreduxSec改造成ES6语法。*
 
----
+
 > **例子三  src/examplel/counterVanilla**
 官网例子 counterVanilla
 
----
+
 > **例子四 src/examplel/counter**
 官网例子 counter
 
----
+
 > **例子五 src/examplel/todos**
 官网例子todos
 
----
+
 > **例子六 src/examplel/router**
 官网例子router
+地址：https://github.com/reactjs/react-router-tutorial/tree/master/lessons
 
-# css 
+## css 
 >文件夹下 darkdown.css 用于软件 Cmd Markdown.exe 生成的html的样式
 
-# 学习文档
+## 学习文档
 
 >* JavaScript学习笔记_AMD规范
 >* JavaScript学习笔记_Reduce和Transduce
@@ -65,4 +66,5 @@
 >* React学习笔记_redux
 >* React学习笔记_redux二
 
-
+## 相关网站
+> https://github.com/ReactTraining/react-router react-router 官网
