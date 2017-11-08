@@ -21,7 +21,12 @@ arr.reduce(callback,[initialValue])
 
 ### 例一
 ```javascript
-var items = [10, 120, 1000];// our reducer functionvar reducer = function add(sumSoFar, item) { return sumSoFar + item; };// do the jobvar total = items.reduce(reducer, 0);console.log(total); // 1130
+var items = [10, 120, 1000];
+var reducer = function add(sumSoFar, item) {
+    return sumSoFar + item;
+};
+var total = items.reduce(reducer, 0);
+console.log(total); // 1130
 ```
 可以看出，reduce函数根据初始值0，不断的进行叠加，完成最简单的总和的实现。
  
@@ -29,7 +34,13 @@ reduce函数的返回结果类型和传入的初始值相同，上个实例中�
 
 ### 例二
 ```javascript
-var items = [10, 120, 1000];// our reducer functionvar reducer = function add(sumSoFar, item) { sumSoFar.sum = sumSoFar.sum + item; return sumSoFar;};// do the jobvar total = items.reduce(reducer, {sum: 0});console.log(total); // {sum:1130}
+var items = [10, 120, 1000];
+var reducer = function add(sumSoFar, item) {
+    sumSoFar.sum = sumSoFar.sum + item;
+    return sumSoFar;
+};
+var total = items.reduce(reducer, {sum: 0});
+console.log(total); // {sum:1130}
 ```
 
 ---
@@ -40,7 +51,14 @@ var items = [10, 120, 1000];// our reducer functionvar reducer = function add(su
 在下面的方法中，采用分而治之的方法，即将reduce函数第一个参数callback封装为一个数组，由数组中的每一个函数单独进行叠加并完成reduce操作。所有的一切通过一个manager函数来管理流程和传递初始参数。
 
 ```javascript
-var manageReducers = function(reducers) { return function(state, item) {  return Object.keys(reducers).reduce(   function(nextState, key) {    reducers[key](state, item);    return state;   },   {}  ); }};
+var manageReducers = function (reducers) {
+    return function (state, item) {
+        return Object.keys(reducers).reduce(function (nextState, key) {
+            reducers[key](state, item);
+            return state;
+        }, {});
+    }
+};
 ```
 上面就是manager函数的实现，它需要reducers对象作为参数，并返回一个callback类型的函数，作为reduce的第一个参数。在该函数内部，则执行多维的叠加工作（Object.keys（））。
  
@@ -100,7 +118,11 @@ console.log(sum, qsum);
 
 如何知道一串字符串中每个字母出现的次数？
 ```javascript
-var arrString = 'abcdaabc';arrString.split('').reduce(function(res, cur) {  res[cur] ? res[cur] ++ : res[cur] = 1  return res;}, {})
+var arrString = 'abcdaabc';
+arrString.split('').reduce(function (res, cur) {
+    res[cur] ? res[cur]++ : res[cur] = 1
+    return res;
+}, {})
 ```
 由于可以通过第二参数设置叠加结果的类型初始值，因此这个时候reduce就不再仅仅只是做一个加法了，我们可以灵活的运用它来进行各种各样的类型转换，比如将数组按照一定规则转换为对象，也可以将一种形式的数组转换为另一种形式的数组。
 ```javascript
