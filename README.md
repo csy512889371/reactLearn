@@ -7,9 +7,9 @@
 ## **目录结构**
 
 ## config 配置文件
-标签：  package 包依赖
-标签：  webpack.config.js
-标签： .eslintrc
+> package 包依赖
+> webpack.config.js
+> .eslintrc
 
 以上几个配置文件 可以实习开发 React 热部署。方便学习。
 将其放在项目跟目录下：npm install
