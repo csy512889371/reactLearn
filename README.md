@@ -48,7 +48,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 官网例子router
 
 > **例子七 src/examplel/todomvc** </br>
-![image]()
+![image](https://github.com/csy512889371/reactLearn/blob/master/img/todomvc.png)
 
 ## css 
 > 文件夹下 darkdown.css 用于软件 Cmd Markdown.exe 生成的html的样式
@@ -65,6 +65,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* JavaScript学习笔记_模块的写法
 >* JavaScript学习笔记_尾调用优化
 >* JavaScript学习笔记_异步模式
+>* JavaScript学习笔记_ReactRouter使用教程.md
 >* nodeJs笔记20170926.doc
 >* react实战.html
 >* React学习笔记_react-redux
