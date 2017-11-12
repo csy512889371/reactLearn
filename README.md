@@ -77,3 +77,4 @@ myreduxThird 对myreduxSec改造成ES6语法
 >   [react-router 官网](https://github.com/ReactTraining/react-router) </br>
 > [redux 中文](http://www.redux.org.cn/)  </br>
 > [阮一峰教程](http://www.ruanyifeng.com/blog/javascript/)  </br>
+> https://github.com/kriasoft/react-decorators </br>
