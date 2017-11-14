@@ -78,4 +78,6 @@ myreduxThird 对myreduxSec改造成ES6语法
 > [redux 中文](http://www.redux.org.cn/)  </br>
 > [阮一峰教程](http://www.ruanyifeng.com/blog/javascript/)  </br>
 > https://github.com/kriasoft/react-decorators </br>
-> https://marmelab.com/admin-on-rest/Tutorial.html#installation
+> https://marmelab.com/admin-on-rest/Tutorial.html#installation material
+> https://github.com/mirrorjs/mirror/blob/master/README_zh.md
+> https://github.com/shrimpliu/shradmin
