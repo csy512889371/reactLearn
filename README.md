@@ -49,6 +49,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 
 > **例子七 src/examplel/todomvc** </br>
 ![image](https://github.com/csy512889371/reactLearn/blob/master/img/todomvc.png)
+> **例子七 src/examplel/shopping-cart** </br>
 
 ## css 
 > 文件夹下 darkdown.css 用于软件 Cmd Markdown.exe 生成的html的样式
@@ -56,6 +57,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 ## 学习文档
 
 >* JavaScript学习笔记_AMD规范
+>* JavaScript学习笔记_ReactRouter使用教程
 >* JavaScript学习笔记_Reduce和Transduce
 >* JavaScript学习笔记_闭包
 >* JavaScript学习笔记_非构造函数的继承
@@ -68,10 +70,17 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* JavaScript学习笔记_ReactRouter使用教程.md
 >* nodeJs笔记20170926.doc
 >* react实战.html
+>* React学习比较
+>* React学习比较_初识React中的High Order Component
+>* React学习笔记_dotomvc
+>* React学习笔记_es6 javascript对象的扩展运算符
 >* React学习笔记_react-redux
+>* React学习笔记_React创建组件的三种方式及其区别
+>* React学习笔记_React中元素与组件的区别
 >* React学习笔记_Reduce()方法详解
 >* React学习笔记_redux
 >* React学习笔记_redux二
+>* React学习笔记_无状态组件(Stateless Component) 与高阶组件
 
 ## 相关网站
 >   [react-router 官网](https://github.com/ReactTraining/react-router) </br>
