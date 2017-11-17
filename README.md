@@ -90,6 +90,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 > https://marmelab.com/admin-on-rest/Tutorial.html#installation material
 > https://github.com/mirrorjs/mirror/blob/master/README_zh.md
 > https://github.com/shrimpliu/shradmin
+> [npmjs 官网](https://www.npmjs.com/package/package )
 
 ## 例子
 > https://github.com/yezihaohao/react-admin 
