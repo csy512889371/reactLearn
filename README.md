@@ -97,3 +97,9 @@ myreduxThird 对myreduxSec改造成ES6语法
 > [React+AntD 后台管理系统解决方案 -- 终极版](https://segmentfault.com/a/1190000009379222)</br>
 > [react技术栈的综合运用](https://github.com/MuYunyun/reactSPA)</br>
 > [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)</br>
+
+## 插件
+
+>* [redux-saga API手册](http://leonshi.com/redux-saga-in-chinese/docs/api/index.html)
+>* [chalk](https://www.npmjs.com/package/chalk)
+>* [redux-actions](https://github.com/reduxactions/redux-actions)
