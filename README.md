@@ -86,14 +86,14 @@ myreduxThird 对myreduxSec改造成ES6语法
 >   [react-router 官网](https://github.com/ReactTraining/react-router) </br>
 > [redux 中文](http://www.redux.org.cn/)  </br>
 > [阮一峰教程](http://www.ruanyifeng.com/blog/javascript/)  </br>
-> https://github.com/kriasoft/react-decorators </br>
-> https://marmelab.com/admin-on-rest/Tutorial.html#installation material
-> https://github.com/mirrorjs/mirror/blob/master/README_zh.md
-> https://github.com/shrimpliu/shradmin
-> [npmjs 官网](https://www.npmjs.com/package/package )
+> [react-decorators](https://github.com/kriasoft/react-decorators) </br>
+> [admin-on-rest](https://marmelab.com/admin-on-rest/Tutorial.html#installation) material</br>
+> [mirror](https://github.com/mirrorjs/mirror/blob/master/README_zh.md)</br>
+> [shradmin](https://github.com/shrimpliu/shradmin)</br>
+> [npmjs 官网](https://www.npmjs.com/package/package)</br>
 
 ## 例子
-> https://github.com/yezihaohao/react-admin 
-> https://segmentfault.com/a/1190000009379222
-> https://github.com/MuYunyun/reactSPA
-> http://muyunyun.cn/posts/9bfbdbf4/
+> [后台管理系统解决方案](https://github.com/yezihaohao/react-admin)</br>
+> [React+AntD 后台管理系统解决方案 -- 终极版](https://segmentfault.com/a/1190000009379222)</br>
+> [react技术栈的综合运用](https://github.com/MuYunyun/reactSPA)</br>
+> [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)</br>
