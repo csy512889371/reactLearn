@@ -91,6 +91,9 @@ myreduxThird 对myreduxSec改造成ES6语法
 > [mirror](https://github.com/mirrorjs/mirror/blob/master/README_zh.md)</br>
 > [shradmin](https://github.com/shrimpliu/shradmin)</br>
 > [npmjs 官网](https://www.npmjs.com/package/package)</br>
+> [create-apps-with-no-configuration](https://reactjs.org/blog/2016/07/22/create-apps-with-no-configuration.html)
+> [antd](https://ant.design/docs/react/introduce-cn)
+
 
 ## 例子
 > [后台管理系统解决方案](https://github.com/yezihaohao/react-admin)</br>
@@ -103,3 +106,6 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* [redux-saga API手册](http://leonshi.com/redux-saga-in-chinese/docs/api/index.html)
 >* [chalk](https://www.npmjs.com/package/chalk)
 >* [redux-actions](https://github.com/reduxactions/redux-actions)
+>* [webpack中文文档](https://doc.webpack-china.org/)
+>* [react+webpack3.0+开发和生产环境分离的脚手架](https://github.com/wjf444128852/react-webpack)
+>* [expressjs](http://www.expressjs.com.cn/)
