@@ -83,7 +83,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* React学习笔记_无状态组件(Stateless Component) 与高阶组件
 
 ## 相关网站
->   [react-router 官网](https://github.com/ReactTraining/react-router) </br>
+>  [react-router 官网](https://github.com/ReactTraining/react-router) </br>
 > [redux 中文](http://www.redux.org.cn/)  </br>
 > [阮一峰教程](http://www.ruanyifeng.com/blog/javascript/)  </br>
 > [react-decorators](https://github.com/kriasoft/react-decorators) </br>
@@ -94,7 +94,7 @@ myreduxThird 对myreduxSec改造成ES6语法
 > [create-apps-with-no-configuration](https://reactjs.org/blog/2016/07/22/create-apps-with-no-configuration.html)</br>
 > [antd](https://ant.design/docs/react/introduce-cn)</br>
 > [redux-tutorial](https://github.com/react-guide/redux-tutorial-cn#redux-tutorial)
-
+> [thinkjs](http://www.jianshu.com/p/70bd1bbb45b9)
 
 ## 例子
 > [后台管理系统解决方案](https://github.com/yezihaohao/react-admin)</br>
