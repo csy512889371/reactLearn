@@ -96,6 +96,8 @@ myreduxThird 对myreduxSec改造成ES6语法
 > [redux-tutorial](https://github.com/react-guide/redux-tutorial-cn#redux-tutorial)
 > [thinkjs](http://www.jianshu.com/p/70bd1bbb45b9)
 > [amazeui](http://ask.amazeui.org)
+> [easy-mock\eolinker](https://www.easy-mock.com)
+> [ant motion](https://motion.ant.design/)
 
 ## 例子
 > [后台管理系统解决方案](https://github.com/yezihaohao/react-admin)</br>
