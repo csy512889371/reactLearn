@@ -239,13 +239,21 @@ serialVersionUID的作用：
 ## 开启nodejs 提示
 ![image](https://github.com/csy512889371/reactLearn/blob/master/img/idea/55.png)
 
+## IDEA引MAVEN项目jar包依赖导入问题解决
 
 
+IDEA内置了Maven环境，默认采用Maven解决项目依赖问题。在新建项目后，项目的路径中会生成pom.xml文件和
+项目名.iml文件。新建项目后，IDEA不会自动刷新Maven的依赖。以Spring Application为例，新建项目编译时提示以下错误信息： 
+> 刷新Maven配置的方法为：
 
+>* 右键单击项目；
+>* 在弹出菜单中选择Maven|Reimport菜单项。
 
+此时，IDEA将通过网络自动下载相关依赖，并存放在Maven的本地仓库中。另外，可以将Maven的刷新设置为自动，配置方法为：
 
-
-
+>* 单击File|Setting菜单项，打开Settings选项卡；
+>* 在左侧的目录树中，展开Maven节点；
+>* 勾选Import Maven projects automatically选择项。
 
 
 
