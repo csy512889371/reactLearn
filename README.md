@@ -118,3 +118,5 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* [lodash](http://lodashjs.com/docs/)
 >* [devtools](https://github.com/facebook/react-devtools/releases)
 >* [按需加载](https://reacttraining.com/react-router/web/guides/philosophy)
+>* [reacttraining.com](https://reacttraining.com/react-router/web/guides/static-routes)
+>* [前前前端](https://zhuanlan.zhihu.com/qiutc)
