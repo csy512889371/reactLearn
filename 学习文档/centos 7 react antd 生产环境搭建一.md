@@ -163,34 +163,25 @@ $ sudo systemctl start docker
 
 ```
 
->* 建立 docker 用户组
 
 
-```shell
-默认情况下，docker 命令会使用 Unix socket 与 Docker 引擎通讯。而只有 root 用户和 docker 组的用户才可以访问 Docker 引擎的 Unix socket。出于安全考虑，一般 Linux 系统上不会直接使用 root 用户。因此，更好地做法是将需要使用 docker 的用户加入 docker 用户组。
+## 镜像加速
 
-建立 docker 组：
+>* 配置后体验飞一般的感觉
 
-$ sudo groupadd docker
-将当前用户加入 docker 组：
-
-$ sudo usermod -aG docker $USER
-
-```
-
-> 镜像加速
 ```shell
 对于使用 systemd 的系统，用 systemctl enable docker 启用服务后，编辑 /etc/systemd/system/multi-user.target.wants/docker.service 文件，找到 ExecStart= 这一行，在这行最后添加加速器地址 --registry-mirror=<加速器地址>，如：
 
 ExecStart=/usr/bin/dockerd --registry-mirror=https://jxus37ad.mirror.aliyuncs.com
-注：对于 1.12 以前的版本，dockerd 换成 docker daemon。
+```
 
 重新加载配置并且重新启动。
 
+```shell
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart docker
-
 ```
+## 常用命令
 
 > 信息版本
 
@@ -279,6 +270,22 @@ Docker exec –it container /bin/bash
 exit
 ```
 
+# 安装percona mysql 数据库
+
+```shell
+docker pull percona:5.7
+
+查看自己最新pull的镜像可以使用
+docker images
+
+docker run -d -eMYSQL_ROOT_PASSWORD=“密码”-P percona:5.7
+```
+
+>* 注：-d 以daemon的方式在后台运行
+>* -e 可以设置mysql的管理密码
+>* -P 将容器内部的3306端口映射到宿主机的随机端口
+>* -p ip:hostPort:containerPort |ip::containerPort | >* hostPort:containerPort | containerPort     指定宿主机的端口
+-v /host:/container  可以指定容器使用的目录
 
 
 # centos 下安装node js (生产环境可以不用安装！)
