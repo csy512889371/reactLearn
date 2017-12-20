@@ -336,3 +336,9 @@ npm run build (发布)
 
 >* 开始运行： 
 npm start 
+
+## 安装cnpm
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install [name]
+
+
