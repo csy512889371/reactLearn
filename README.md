@@ -122,4 +122,5 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* [前前前端](https://zhuanlan.zhihu.com/qiutc)
 >* [fay](https://github.com/love-fay/fay-react-redux-example)
 >* [极课](http://www.jikexueyuan.com/course/787_2.html?ss=1)
+>* [node.js&pm2搭建node生产环境](http://www.jianshu.com/p/43525232b03b)
 
