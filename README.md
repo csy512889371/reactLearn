@@ -123,4 +123,5 @@ myreduxThird 对myreduxSec改造成ES6语法
 >* [fay](https://github.com/love-fay/fay-react-redux-example)
 >* [极课](http://www.jikexueyuan.com/course/787_2.html?ss=1)
 >* [node.js&pm2搭建node生产环境](http://www.jianshu.com/p/43525232b03b)
-
+>* [利用styled-components解决样式问题](http://blog.csdn.net/ddwhan0123/article/details/55211743)
+>* [lodash](https://lodash.com/docs)
